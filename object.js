@@ -39,3 +39,26 @@ for (let prop in user) {
   // console.log(prop);
   console.log(user[prop]);
 }
+
+// Student class
+class Student {
+  constructor(firstName, lastName, id, studentHobbies) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.id = id;
+    this.studentHobbies = studentHobbies;
+  }
+  getUserFullName = () => `${this.firstName} ${this.lastName}`;
+}
+
+let stud1 = new Student("Jon", "Joid", 12, ["football", "reading"]);
+let stud2 = new Student("Jolli", "Divd", 12, ["writing", "volleyball"]);
+
+console.log(stud1);
+console.log(stud1.id);
+console.log(stud1.firstName);
+console.log(stud1.lastName);
+console.log(Student.studentHobbies);
+console.log(stud2.studentHobbies[1]);
+console.log(stud1.getUserFullName());
+console.log(stud2.getUserFullName());
