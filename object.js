@@ -62,3 +62,27 @@ console.log(Student.studentHobbies);
 console.log(stud2.studentHobbies[1]);
 console.log(stud1.getUserFullName());
 console.log(stud2.getUserFullName());
+
+// Hight Schoool Student class
+class higherSchooolStudent extends Student {
+  constructor(firstName, lastName, id, studentHobbies, GBA) {
+    super(firstName, lastName, id, studentHobbies);
+    this.GBA = GBA;
+  }
+}
+
+let higStud1 = new higherSchooolStudent(
+  "Saddam",
+  "Arbaa",
+  12,
+  ["writing", "dancing"],
+  4.4
+);
+
+console.log(higStud1);
+console.log(higStud1.id);
+console.log(higStud1.firstName);
+console.log(higStud1.lastName);
+console.log(higStud1.studentHobbies);
+console.log(higStud1.GBA);
+console.log(higStud1.getUserFullName());
