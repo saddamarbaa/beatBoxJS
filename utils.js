@@ -10,6 +10,7 @@ class Beat {
 
     this.audio = new Audio(audioSource);
     // console.log(this.audio);
+    // this.audio.play();
   }
 
   play = () => {

@@ -1,29 +1,29 @@
 let beats = {
-  65: {
+  83: {
     beat: new Beat("./assets/Piano Chord 331.mp3"),
   },
-  83: {
+  85: {
     beat: new Beat("./assets/Piano Chord 209.mp3"),
   },
   68: {
     beat: new Beat("./assets/Piano Chord 208.mp3"),
   },
-  70: {
+  65: {
     beat: new Beat("./assets/Drum Sticks Hit 3.mp3"),
   },
-  71: {
+  78: {
     beat: new Beat("./assets/Drum Snare Roll.mp3"),
   },
-  72: {
+  73: {
     beat: new Beat("./assets/PREL Musical 57.mp3"),
   },
-  74: {
+  83: {
     beat: new Beat("./assets/Cymbal Suspended 2.mp3"),
   },
-  75: {
+  79: {
     beat: new Beat("./assets/Musical Compos 33.mp3"),
   },
-  76: {
+  75: {
     beat: new Beat("./assets/Musical Orches 4.mp3"),
   },
 };
@@ -32,9 +32,18 @@ let beats = {
  * Function to play the beat upon a press of key
  * @param {event} event
  */
+
 const triggerBeat = (event) => {
-  console.log(event);
-  console.log(event.code);
+  // console.log(event);
+  // console.log(event.keyCode);
+
+  const keyCode = event.keyCode;
+
+  if (keyCode in beats) {
+    // console.log(keyCode);
+    let pressedKey = beats[keyCode];
+    pressedKey.beat.play();
+  }
 };
 
 // Keydown addEventListener to fire triggerBeat function
