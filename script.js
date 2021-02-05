@@ -1,30 +1,41 @@
+// beats object
+
 let beats = {
-  83: {
+  76: {
     beat: new Beat("./assets/Piano Chord 331.mp3"),
-  },
-  85: {
-    beat: new Beat("./assets/Piano Chord 209.mp3"),
-  },
-  68: {
-    beat: new Beat("./assets/Piano Chord 208.mp3"),
-  },
-  65: {
-    beat: new Beat("./assets/Drum Sticks Hit 3.mp3"),
-  },
-  78: {
-    beat: new Beat("./assets/Drum Snare Roll.mp3"),
-  },
-  73: {
-    beat: new Beat("./assets/PREL Musical 57.mp3"),
-  },
-  83: {
-    beat: new Beat("./assets/Cymbal Suspended 2.mp3"),
+    button: new Button("#00fffe", 76),
   },
   79: {
-    beat: new Beat("./assets/Musical Compos 33.mp3"),
+    beat: new Beat("./assets/Piano Chord 209.mp3"),
+    button: new Button("#00fffe", 79),
   },
-  75: {
-    beat: new Beat("./assets/Musical Orches 4.mp3"),
+  86: {
+    beat: new Beat("./assets/Piano Chord 208.mp3"),
+    button: new Button("#00fffe", 86),
+  },
+  69: {
+    beat: new Beat("./assets/Drum Sticks Hit 3.mp3"),
+    button: new Button("#00fffe", 69),
+  },
+  83: {
+    beat: new Beat("./assets/Drum Snare Roll.mp3"),
+    button: new Button("#00fffe", 83),
+  },
+  85: {
+    beat: new Beat("./assets/Drum Snare Roll.mp3"),
+    button: new Button("#00fffe", 85),
+  },
+  68: {
+    beat: new Beat("./assets/PREL Musical 57.mp3"),
+    button: new Button("#00fffe", 68),
+  },
+  65: {
+    beat: new Beat("./assets/Cymbal Suspended 2.mp3"),
+    button: new Button("#00fffe", 65),
+  },
+  78: {
+    beat: new Beat("./assets/Musical Compos 33.mp3"),
+    button: new Button("#00fffe", 78),
   },
 };
 
@@ -43,6 +54,7 @@ const triggerBeat = (event) => {
     // console.log(keyCode);
     let pressedKey = beats[keyCode];
     pressedKey.beat.play();
+    pressedKey.button.select();
   }
 };
 
