@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background: url("./assets/background.jpeg") no-repeat right top;
 }
 
 .container {

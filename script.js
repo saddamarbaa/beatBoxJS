@@ -15,27 +15,27 @@ let beats = {
   },
   69: {
     beat: new Beat("./assets/Drum Sticks Hit 3.mp3"),
-    button: new Button("#00fffe", 69),
+    button: new Button("#ff00ff", 69),
   },
   83: {
     beat: new Beat("./assets/Drum Snare Roll.mp3"),
-    button: new Button("#00fffe", 83),
+    button: new Button("#ff00ff", 83),
   },
   85: {
     beat: new Beat("./assets/Drum Snare Roll.mp3"),
-    button: new Button("#00fffe", 85),
+    button: new Button("#ff00ff", 85),
   },
   68: {
     beat: new Beat("./assets/PREL Musical 57.mp3"),
-    button: new Button("#00fffe", 68),
+    button: new Button("#ff00ff", 68),
   },
   65: {
     beat: new Beat("./assets/Cymbal Suspended 2.mp3"),
-    button: new Button("#00fffe", 65),
+    button: new Button("#ffffff", 65),
   },
   78: {
     beat: new Beat("./assets/Musical Compos 33.mp3"),
-    button: new Button("#00fffe", 78),
+    button: new Button("#ffffff", 78),
   },
 };
 
